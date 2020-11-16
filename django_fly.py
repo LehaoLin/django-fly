@@ -143,7 +143,7 @@ def init():
         print("You can install Letsencrypt by 'sudo pip3 install certbot'")
 
 
-@click.command()
+@cli.command()
 def update():
     present_path = os.path.abspath(os.path.join(os.getcwd(), "."))
     if not os.path.exists(f'{present_path}/__deploy__'):
