@@ -146,7 +146,11 @@ def init():
 @click.command()
 def update():
     present_path = os.path.abspath(os.path.join(os.getcwd(), "."))
+    if not os.path.exists(f'{present_path}/__deploy__'):
+        print("\033[0;31;40mPlease use the command under the directory which has the '__deploy__' sub-dir.\033[0m")
+
     update_nginx(present_path)
     update_supervisor(present_path)
     print("\033[0;33;40mUpdate Complete!\033[0m")
+    
     
