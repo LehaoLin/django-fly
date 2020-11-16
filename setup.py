@@ -4,7 +4,7 @@ from setuptools import setup
 setup(
     name='django-fly',
     long_description=open('README.md').read(),
-    version='0.0.2',
+    version='0.0.3',
     py_modules=['django_fly'],
     install_requires=[
         'click',
