@@ -20,7 +20,7 @@ def check_environment():
         os.system("sudo pip3 install django==2.2.13")
         # print("You can install NGINX by 'pip3 install django==2.2.13'")
     else:
-        if list(django.VERSION)[0] != 3:
+        if list(django.VERSION)[0] != 2:
             print("\033[0;31;40m❌ [Warning] Sorry, Django-fly just provide service for Django 2.2.x at the current version.\033[0m")
             print("If you want to Django-fly be able for Django 3.x, please wait for new version or join us to be a contributor. https://github.com/LehaoLin/django-fly")
             sys.exit()
@@ -152,5 +152,4 @@ def update():
     update_nginx(present_path)
     update_supervisor(present_path)
     print("\033[0;33;40mUpdate Complete!\033[0m")
-    
     
