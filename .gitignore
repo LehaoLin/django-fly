@@ -1,0 +1,8 @@
+*.DS_Store
+build/
+__pycache__/
+__deploy__/
+venv/
+temp/
+django_fly.egg-info/
+dist/
