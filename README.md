@@ -5,6 +5,8 @@ Current version only fits django 2.2.x.
 ## Installation
 ```$ pip3 install django-fly```
 
+If you are failed to do pip3 install. Please git clone this repo, then ```python3 setup.py install```.
+
 ## Usage
 #### 1. ```$ django-fly init```
 
